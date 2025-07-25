@@ -1,0 +1,26 @@
+# This function checks if the number is even or odd
+def check_even_odd(num):
+    if num % 2 == 0:
+        return f"{num} is even 👍"
+    else:
+        return f"{num} is odd 👀"
+
+# Main function to ask the user and display result
+def main():
+    try:
+        # Asking the user for a number
+        number = int(input("Enter a number to check if it's even or odd: "))
+        
+        # Calling the function and storing the result
+        result = check_even_odd(number)
+        
+        # Printing what the function returned
+        print(result)
+    
+    except ValueError:
+        # In case user types something that's not a number
+        print("Oops! Please enter a valid number 😅")
+
+# Just calling main if this file is being run directly
+if __name__ == "__main__":
+    main()
